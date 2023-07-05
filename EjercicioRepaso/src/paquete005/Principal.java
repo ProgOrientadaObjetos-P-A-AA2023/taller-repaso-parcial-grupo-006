@@ -24,7 +24,8 @@ public class Principal {
         
         PagoLuzElectrica luz01 = new PagoLuzElectrica(23, 2.2, 
                 "Loja", 2.2);
-        
+        luz01.calcularPago();
+        lista.add(luz01);
         
         BilleteraPagos pago = new BilleteraPagos();
         System.out.println(pago);
