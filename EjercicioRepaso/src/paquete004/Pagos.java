@@ -12,7 +12,7 @@ public abstract class Pagos {
 
     @Override
     public String toString() {
-        String m = String.format("\tPago: $%.2f\n",
+        String m = String.format("Pago: $%.2f\n",
                 pago);
         
         return m;
