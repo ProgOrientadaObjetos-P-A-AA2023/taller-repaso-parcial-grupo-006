@@ -3,24 +3,20 @@ package paquete004;
 
 public abstract class Pagos {
     protected double pago;
-    protected double tarifaBase;
-
-    public Pagos(double tafBase) {
-       tarifaBase = tafBase;
-    }
 
     public double getPago() {
         return pago;
     }
+    
+    public abstract void calcularPago();
 
-    public double getTarifaBase() {
-        return tarifaBase;
-    }
-
-    public void setTarifaBase(double n) {
-        tarifaBase = n;
+    @Override
+    public String toString() {
+        String m = String.format("\tPago: $%.2f\n",
+                pago);
+        
+        return m;
     }
     
-    public abstract void calcularPago(String n);
     
 }
