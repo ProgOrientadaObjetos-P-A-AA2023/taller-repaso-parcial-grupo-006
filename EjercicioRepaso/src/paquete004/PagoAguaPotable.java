@@ -1,30 +1,39 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package paquete004;
 
-import paquete001.Persona;
+public class PagoAguaPotable extends Pagos {
 
-/**
- *
- * @author reroes
- */
-public class PagoAguaPotable {
-    public double calcularPago(String tipo){
-        double pago = 0;
-        if(tipo.equals("comercial")){
-            double tarifaFija = 2.20;
-            double metrosCubicosConsumo = 100.2;
-            double costoConsumoCubicos = 0.2;
-            pago = tarifaFija + (metrosCubicosConsumo * costoConsumoCubicos) + 15;
-        }else{
-            double tarifaFija = 2.20;
-            double metrosCubicosConsumo = 100.2;
-            double costoConsumoCubicos = 0.2;
-            pago = tarifaFija + (metrosCubicosConsumo * costoConsumoCubicos);
+    private double metrosCubicosConsumo;
+    private  double costoConsumoCubicos;
+
+    public PagoAguaPotable(double tafBase, double metroCub, double costo) {
+        super(tafBase);
+        metrosCubicosConsumo = metroCub;
+        costoConsumoCubicos = costo;
+    }
+
+    public double getMetrosCubicosConsumo() {
+        return metrosCubicosConsumo;
+    }
+
+    public void setMetrosCubicosConsumo(double n) {
+        metrosCubicosConsumo = n;
+    }
+
+    public double getCostoConsumoCubicos() {
+        return costoConsumoCubicos;
+    }
+
+    public void setCostoConsumoCubicos(double n) {
+        costoConsumoCubicos = n;
+    }
+    
+    @Override
+    public void calcularPago(String tipo) {
+        if (tipo.equals("comercial")) {
+            pago = tarifaBase + (metrosCubicosConsumo * costoConsumoCubicos) + 15;
+            
+        } else if(tipo.equals("casa")){
+            pago = tarifaBase + (metrosCubicosConsumo * costoConsumoCubicos);
         }
-        
-        return pago;
     }
 }
