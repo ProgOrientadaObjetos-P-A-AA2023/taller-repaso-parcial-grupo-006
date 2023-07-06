@@ -55,8 +55,5 @@ public class Persona {
 
     public void setCiudad(String n) {
         ciudad = n;
-    }
-    
-    
-    
+    }    
 }

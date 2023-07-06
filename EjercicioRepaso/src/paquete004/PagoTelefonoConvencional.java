@@ -6,8 +6,8 @@ public class PagoTelefonoConvencional extends Pagos {
     private double costoMinuto;
     private double tarifaBase;
 
-    public PagoTelefonoConvencional(double minCons, double costMin,
-            double tafBase) {
+    public PagoTelefonoConvencional(double tafBase, double minCons, 
+            double costMin) {
         tarifaBase = tafBase;
         minutosConsumidos = minCons;
         costoMinuto = costMin;
@@ -46,7 +46,7 @@ public class PagoTelefonoConvencional extends Pagos {
     @Override
     public String toString() {
         String m = String.format("""
-                                 ****Pago Telefono Convecional****
+                                 **** Pago Telefono Convecional ****
                                     Costo Minuto: $%.2f
                                     Minutos Consumidos: $%.2f
                                     Tarifa Base: $%.2f

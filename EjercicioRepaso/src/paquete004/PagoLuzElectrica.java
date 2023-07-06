@@ -9,8 +9,7 @@ public class PagoLuzElectrica extends Pagos {
     private String ciudad;
     private double tarifaBase;
 
-    public PagoLuzElectrica(double kilConsm, double costKil, String ciu,
-            double tafBase) {
+    public PagoLuzElectrica(double tafBase, double kilConsm, double costKil, String ciu) {
         tarifaBase = tafBase;
         kilovatiosConsumidos = kilConsm;
         costoKilovatio = costKil;
@@ -61,7 +60,7 @@ public class PagoLuzElectrica extends Pagos {
     @Override
     public String toString() {
         String m = String.format("""
-                                 ****Pago Luz Electrica****
+                                 **** Pago Luz Electrica ****
                                     Ciudad: %s
                                     Consumo Kilovatios: $%.2f
                                     Costo Consumo Kilovatios: $%.2f

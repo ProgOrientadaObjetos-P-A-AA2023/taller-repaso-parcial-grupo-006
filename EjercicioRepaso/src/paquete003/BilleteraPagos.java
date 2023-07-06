@@ -7,7 +7,7 @@ import paquete004.Pagos;
 public class BilleteraPagos {
     private Persona persona;
     private double gastoPagos;
-    private  String mes;
+    private String mes;
     private ArrayList<Pagos> pagos;
 
     public BilleteraPagos(Persona per, String m, ArrayList<Pagos> pags) {
@@ -60,7 +60,7 @@ public class BilleteraPagos {
             información correspondiente oportuna
         */
         String m = String.format("""
-                                 ---------------Reporte Pagos------------
+                                 --------------- Reporte Pagos ---------------
                                  Cliente: %s %s
                                  Edad: %d
                                  Cedula: %s

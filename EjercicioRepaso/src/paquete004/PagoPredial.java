@@ -34,7 +34,7 @@ public class PagoPredial extends Pagos {
     @Override
     public String toString() {
         String m = String.format("""
-                                 ****Pago Predial****
+                                 **** Pago Predial ****
                                     Costo Propiedad: $%.2f
                                     Porcentaje: $%.2f
                                  %s

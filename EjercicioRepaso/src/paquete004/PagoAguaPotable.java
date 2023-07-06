@@ -60,7 +60,7 @@ public class PagoAguaPotable extends Pagos {
     @Override
     public String toString() {
         String m = String.format("""
-                                 ****Pago Agua Potable****
+                                 **** Pago Agua Potable ****
                                     Tipo: %s
                                     Consumo Metros Cubicos: $%.2f
                                     Costo Consumo Metros Cubicos: $%.2f

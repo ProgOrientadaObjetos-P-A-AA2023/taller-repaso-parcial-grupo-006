@@ -25,13 +25,11 @@ public class Principal {
         agua02.calcularPago();
         lista.add(agua02);
 
-        PagoLuzElectrica luz01 = new PagoLuzElectrica(23, 2.2,
-                "Loja", 2.2);
+        PagoLuzElectrica luz01 = new PagoLuzElectrica(23, 2.2, 2.2, "Loja");
         luz01.calcularPago();
         lista.add(luz01);
 
-        PagoLuzElectrica luz02 = new PagoLuzElectrica(45, 5.6,
-                "Quito", 2.2);
+        PagoLuzElectrica luz02 = new PagoLuzElectrica(45, 5.6, 2.2, "Quito");
         luz02.calcularPago();
         lista.add(luz02);
 
